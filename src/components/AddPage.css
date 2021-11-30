@@ -1,0 +1,66 @@
+.MuiDialog-paperWidthSm {
+  min-width: 600px;
+  max-width: none;
+}
+
+.page-container {
+  padding: 10px 20px;
+  border: 2px solid rgb(214, 212, 212);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.bin-container {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(236, 45, 45);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -10px;
+  bottom: -10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.bin-container:hover {
+  background-color: rgb(187, 41, 41);
+}
+
+.inputs-container,
+.content-container {
+  position: relative;
+  margin: 10px 0;
+  border: 2px solid rgb(214, 212, 212);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.inputs-container {
+  margin: 10px 0;
+}
+
+.add-btn-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgb(45, 96, 190);
+  width: max-content;
+}
+.add-btn-container span {
+  margin-left: 5px;
+  font-size: 14px;
+  color: rgb(45, 96, 190);
+}
+
+.add-btn-container svg {
+  color: rgb(45, 96, 190);
+  font-size: 1.5em;
+}
