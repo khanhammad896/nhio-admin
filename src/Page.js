@@ -2,8 +2,10 @@ import React from "react";
 import "./Page.css";
 import { Box, Button } from "@material-ui/core";
 import AddPage from "./components/AddPage";
+import Certificate from "./components/Certificate";
 const Page = () => {
   const [open, setOpen] = React.useState(false);
+  const [certOpen, setCertOpen] = React.useState(false);
   const [pages, setPages] = React.useState({
     pages: [],
   });
@@ -13,6 +15,14 @@ const Page = () => {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleCertOpen = () => {
+    setCertOpen(true);
+  };
+
+  const handleCertClose = () => {
+    setCertOpen(false);
   };
 
   const addPage = () => {
@@ -121,6 +131,12 @@ const Page = () => {
             Add Page
           </Button>
         </div>
+        <div className="btn-container">
+          <Button variant="contained" color="primary" onClick={handleCertOpen}>
+            Download
+          </Button>
+        </div>
+        <Certificate open={certOpen} handleClose={handleCertClose} />
         <AddPage
           open={open}
           handleClose={handleClose}

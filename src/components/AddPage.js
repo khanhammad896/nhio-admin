@@ -226,7 +226,7 @@ const AddPage = ({
                       anchorEl={anchorEl}
                       keepMounted
                       open={Boolean(anchorEl)}
-                      onClose={handleMenuClose}
+                      // onClose={handleMenuClose}
                     >
                       <MenuItem onClick={() => handleMenuClose(page.id, 0)}>
                         Text
